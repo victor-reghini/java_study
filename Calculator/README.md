@@ -12,4 +12,4 @@ To run it just use these commads:
 
 ```git clone https://github.com/victor-reghini/java_study.git```
 
-```cd Calculator\out\production\Calculator && java Calculator```
+```cd java_study\Calculator\out\production\Calculator && java Calculator```
