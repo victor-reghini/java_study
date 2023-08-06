@@ -1,6 +1,7 @@
 # Java Calculator Exercise
 
 Just practising some basic java concepts. Here's what it looks like:
+[tutorial used](https://youtu.be/dfhmTyRTCSQ)
 
 ![image](https://github.com/victor-reghini/java_study/assets/52582270/9505cf67-85f1-4b12-af5a-dd25442f71ee)
 
