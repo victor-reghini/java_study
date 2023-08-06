@@ -3,7 +3,7 @@ import java.awt.*;
 import javax.swing.*;
 
 public class Stopwatch implements ActionListener {
-    JFrame frame = new JFrame();
+    JFrame frame = new JFrame("Stopwatch");
     JButton startButton = new JButton("Start");
     JButton resetButton = new JButton("Reset");
     JLabel timeLabel = new JLabel();
