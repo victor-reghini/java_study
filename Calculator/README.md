@@ -2,7 +2,8 @@
 
 Just practising some basic java concepts. Here's what it looks like:
 
-![image](https://github.com/victor-reghini/java_study/assets/52582270/fd9b44d6-f84f-4273-872f-087b4d1b73eb)
+![image](https://github.com/victor-reghini/java_study/assets/52582270/9505cf67-85f1-4b12-af5a-dd25442f71ee)
+
 
 Requirements: You need to have java (JRE or JDK) installed
 
