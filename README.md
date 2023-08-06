@@ -9,3 +9,5 @@ Here are a lot of simple projects like a Hello World, Calculator, Games and othe
 [Stopwatch](https://github.com/victor-reghini/java_study/tree/main/Stopwatch)
 
 [LoginSystem](https://github.com/victor-reghini/java_study/tree/main/LoginSystem)
+
+[TicTacToe](https://github.com/victor-reghini/java_study/tree/main/TicTacToe)
