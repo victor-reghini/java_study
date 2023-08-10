@@ -55,7 +55,6 @@ public class TicTacToe implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        System.out.println("tic");
         for (int i = 0; i < 9; i++) {
             if (e.getSource() == buttons[i]) {
                 if (player1_turn) {
@@ -164,12 +163,9 @@ public class TicTacToe implements ActionListener {
     public void restart(){
         firstTurn();
         for (int i = 0; i < 9; i++) {
-            buttons[i] = new JButton();
-            button_pannel.add(buttons[i]);
-            buttons[i].setFont(new Font(null, Font.BOLD, 120));
+            buttons[i].setText("");
             buttons[i].setFocusable(false);
             buttons[i].setBackground(new Color(40, 40, 40));
-            buttons[i].addActionListener(this);
         }
     }
 }

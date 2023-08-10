@@ -17,8 +17,10 @@ public class Menu implements ActionListener {
 
         playagain.setFont(new Font(null, Font.BOLD, 25));
         playagain.setFocusable(false);
+        playagain.addActionListener(this);
         exit.setFont(new Font(null, Font.BOLD, 25));
         exit.setFocusable(false);
+        exit.addActionListener(this);
 
         grid.add(playagain);
         grid.add(exit);
@@ -28,7 +30,6 @@ public class Menu implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        System.out.println("got here " + e.getSource().toString());
         if(e.getSource() == playagain){
             newGame();
         }
@@ -38,6 +39,7 @@ public class Menu implements ActionListener {
     }
 
     public void newGame() {
+        menu.dispose();
         TicTacToe tictactoe = new TicTacToe();
     }
 
