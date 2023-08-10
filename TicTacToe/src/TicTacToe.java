@@ -7,12 +7,15 @@ import java.util.Random;
 public class TicTacToe implements ActionListener {
 
     Random random = new Random();
+    Boolean player1_turn;
+
     JFrame frame = new JFrame("Tic Tac Toe");
     JPanel title_panel = new JPanel();
     JPanel button_pannel = new JPanel();
     JLabel textfield = new JLabel();
     JButton[] buttons = new JButton[9];
-    Boolean player1_turn;
+
+
 
     TicTacToe() {
         frame.setDefaultCloseOperation(JInternalFrame.EXIT_ON_CLOSE);
@@ -73,12 +76,13 @@ public class TicTacToe implements ActionListener {
                 }
             }
         }
+
     }
 
     public void firstTurn() {
 //       Delay before the game start
         try {
-            Thread.sleep(2000);
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -138,6 +142,8 @@ public class TicTacToe implements ActionListener {
         }
 
         textfield.setText("Player 1 (X) Wins!");
+        frame.dispose();
+        Menu menu = new Menu();
     }
 
     public void oWins(int a, int b, int c) {
@@ -150,5 +156,16 @@ public class TicTacToe implements ActionListener {
         }
 
         textfield.setText("Player 2 (O) Wins!");
+        frame.dispose();
+        Menu menu = new Menu();
+    }
+
+    public void restart(){
+        firstTurn();
+        for (int i = 0; i < 9; i++) {
+            buttons[i].setText("");
+            buttons[i].setFocusable(false);
+            buttons[i].setBackground(new Color(40, 40, 40));
+        }
     }
 }
