@@ -28,6 +28,7 @@ To run it just use these commads:
 
 ```git clone https://github.com/victor-reghini/java_study.git```
 
+<sub>If you use InteliJ:</sub> <br>
 ```cd java_study\LoginSystem\out\production\LoginSystem && java Main```
 
 
