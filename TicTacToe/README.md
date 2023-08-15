@@ -22,6 +22,7 @@ To run it just use these commads:
 
 ```git clone https://github.com/victor-reghini/java_study.git```
 
+<sub>If you use InteliJ:</sub> <br>
 ```cd java_study\TicTacToe\out\production\TicTacToe && java Main```
 
 
