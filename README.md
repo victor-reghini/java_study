@@ -11,3 +11,5 @@ Here are a lot of simple projects like a Hello World, Calculator, Games and othe
 [LoginSystem](https://github.com/victor-reghini/java_study/tree/main/LoginSystem)
 
 [TicTacToe](https://github.com/victor-reghini/java_study/tree/main/TicTacToe)
+
+[Minesweeper](https://github.com/victor-reghini/java_study/tree/main/Minesweeper)
