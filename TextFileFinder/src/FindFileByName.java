@@ -10,7 +10,7 @@ import java.io.InputStreamReader;
 public class FindFileByName implements ActionListener {
     JFrame frame = new JFrame("File Finder - Find by Name"); // window
     JLabel label = new JLabel(); // label
-    JFileChooser folder_selector = new JFileChooser();// input 1
+    FolderSelector folder_selector = new FolderSelector();// input 1
     // input 2
     // input 3
     JButton find = new JButton("Find File"); // button 1
@@ -28,16 +28,6 @@ public class FindFileByName implements ActionListener {
         label.setText("");
         label.setFont(new Font(null, Font.PLAIN, 20));
         label.setBounds(50,25,200,50);
-
-        // TODO make a separate class just for this
-        folder_selector.setCurrentDirectory(new java.io.File("."));
-        folder_selector.setDialogTitle("Choose the Directory");
-        folder_selector.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
-        folder_selector.setAcceptAllFileFilterUsed(false);
-        folder_selector.setBorder(BorderFactory.createTitledBorder(null,"Folder where the search begins", TitledBorder.LEFT, TitledBorder.ABOVE_TOP));
-        folder_selector.setDialogType(JFileChooser.OPEN_DIALOG);
-        folder_selector.setBounds(50,100,300,150);
-
 
         find.setFocusable(false);
         find.addActionListener(this);
@@ -82,7 +72,6 @@ public class FindFileByName implements ActionListener {
 
         BufferedReader stdInput = new BufferedReader(new InputStreamReader(process.getInputStream()));
         BufferedReader stdError = new BufferedReader(new InputStreamReader(process.getErrorStream()));
-//        BufferedReader stdOutput = new BufferedReader(new InputStreamReader(process.getOutputStream()));
 
         System.out.println("Here is the standard output of the command:\n");
         String s = null;
